@@ -1,0 +1,22 @@
+
+<div class="col-xs-12 col-sm-8">
+  <ul class="list-group" ng-repeat="product in pickle">
+    <li class="list-group-item">Description: {{product.description}}</li>
+    <li class="list-group-item">Description: {{product.price}}</li>
+
+    <div class="well">
+      <h4>Comment</h4>
+
+      <hr data-brackets-id="12673">
+
+      <ul data-brackets-id="12674" id="sortable" class="list-unstyled ui-sortable">
+
+        <small class="pull-right text-muted">
+          <span class="glyphicon glyphicon-time"></span>get a timestamp</small>
+        </br>
+        <li class="ui-state-default">{{product.comments.comment}}</li>
+
+      </ul>
+    </div>
+  </ul>
+</div>

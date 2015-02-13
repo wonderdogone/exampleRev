@@ -1,0 +1,24 @@
+
+<div class="panel-body">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th class="text-right">Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in currentProducts">
+                <td><a href="#/products/{{product.id}}">{{product.name}}</a></td>
+                <td>{{product.description}}</td>
+                <td class="text-right">{{product.price | currency}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-primary" ng-click="makeProduct()">New</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿<div class="panel-body">
+  <!--TODO form validation -->
+    <div class="form-group">
+        <label>Name:</label>
+        <input class="form-control" ng-model="currentProducts.name" />
+    </div>
+    <div class="form-group">
+        <label>Description:</label>
+        <input class="form-control" ng-model="currentProducts.description" />
+    </div>
+    <div class="form-group">
+        <label>Price:</label>
+        <input type="number" class="form-control" ng-model="currentProducts.price" />
+    </div>
+    <button class="btn btn-primary" ng-click="saveEdit(currentProducts)">Save</button>
+</div>
